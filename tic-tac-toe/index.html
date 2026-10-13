@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/svg+xml" href="./public/game-logo.png" />
+    <script src="./script.js" defer></script>
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <header>
+      <img src="./public/game-logo.png" alt="" />
+      <h1>Tic Tac Toe</h1>
+    </header>
+    <main>
+      <div id="game-container">
+        <ol id="players" class="highlight-player">
+          <li class="active player1">
+            <span class="player"
+              ><input type="text" required class="hidden" /><span
+                class="player-name"
+                >Player 1</span
+              ><span class="player-symbol">X</span></span
+            ><button>Edit</button>
+          </li>
+          <li class="player2">
+            <span class="player">
+              <input type="text" required class="hidden" />
+              <span class="player-name">Player 2</span>
+
+              <span class="player-symbol">O</span></span
+            >
+            <button>Edit</button>
+          </li>
+        </ol>
+        <div id="game-over" class="hidden">
+          <h2>Game Over!</h2>
+          <p class="player-win">Player 1 won!</p>
+          <p><button class="btn_rematch">Rematch!</button></p>
+        </div>
+        <div id="game-board">
+          <button class="box btn"></button>
+          <button class="box btn"></button>
+          <button class="box btn"></button>
+          <button class="box btn"></button>
+          <button class="box btn"></button>
+          <button class="box btn"></button>
+          <button class="box btn"></button>
+          <button class="box btn"></button>
+          <button class="box btn"></button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

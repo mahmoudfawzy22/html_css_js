@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+}
+
+.container .img-section{
+    position: relative;
+}
+.container .img-section img{
+    height: 100vh;
+}
+
+.container .img-section .logo{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    justify-content: center;  
+    align-items: center;
+}
+
+.container .img-section .logo h1{
+    color: white;
+    font-size: 50px;
+}
+.container .img-section .logo img{
+    height: 100px;
+}
+
+.container .img-section p{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.container .img-section p a{
+    color: white;
+}
+
+.page-section{
+    background-color: #f9fafb;
+}
+
+.page-section .heading-p{
+    padding: 30px 30px 0 50px;
+    margin-bottom: 55px;    
+    width: 80%;
+}
+
+.page-section .heading-p p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.sign-content{
+    background-color: white;
+    padding: 0 50px;
+    box-shadow: 0 8px 10px -4px rgba(224, 225, 226, 0.5);
+    position: relative;
+}
+
+.sign-content .sign-element{
+    width: 75%;
+}
+
+.sign-content h4{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    color: #1f2937;
+}
+
+.sign-content .sign-element label{
+    display: block;
+    font-size: 20px;
+    color: #2c3543;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 15px;
+}
+
+input {
+    width: 250px;
+    height: 30px;               
+    padding: 10px;               
+    border: 1px solid #ccc;      /* Border (the visible square/box) */
+    border-radius: 3px;          /* Rounded corners */
+    font-size: 16px;
+    box-sizing: border-box;      /* Includes padding inside total width */
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid blue; /* <-- this would override your 1px blue border */
+}
+
+#pass, #con-pass{
+    margin-bottom: 20px;
+}
+
+#con-pass:focus, #pass:focus{
+    outline: none;
+    border: 2px solid red;
+}
+
+.submint{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: #596d48;
+    border: none;
+    border-radius: 5px;
+}
+
+.submint a{
+    color: #596d48;
+    text-decoration: none;
+}
+
+
+
