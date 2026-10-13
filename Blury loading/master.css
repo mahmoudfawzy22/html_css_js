@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.bg{
+    background: url(matthew-stephenson-4TvNUd3nnA8-unsplash.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(60px + 100vw);
+    height: calc(60px + 100vh);
+    z-index: -1;
+    filter: blur(30px);
+}
+
+.loading-text{
+    font-size: 30px;
+    color: #fff;
+}
